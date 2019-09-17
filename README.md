@@ -1,6 +1,6 @@
 # us-daily-trending-videos-MERN
 
-Full-stack project made with Node.js, Express and MongoDB for the back-end and React for the front-end of the app.
+Full-stack (MERN Stack) project made with Node.js, Express and MongoDB for the back-end and React for the front-end of the app.
 
 The back-end gets the top 10 trending videos in the United States using cron everyday at midnight, and it puts them as a separate document in the MongoDB database. The data for each day can be acsessed directly by url (_id in the format - yyyymmdd), and then can be used in a front-end app.
 
