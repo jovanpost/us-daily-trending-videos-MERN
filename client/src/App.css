@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#mainContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  background: rgba(2, 15, 31, 0.774);
+}
+
+header {
+  grid-column: 1/13;
+  grid-row: 1;
+}
+
+header h1 {
+  text-align: center;
+  color: white;
+}
+
+header h1 span {
+  color: red;
+}
+
+main {
+  grid-column: 1/13;
+  grid-row: 2;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  margin: 0 auto;
+}
+
+#loading {
+  grid-column: 1/7;
+  grid-row: 1;
+}
+
+#noFound {
+  grid-column: 1/13;
+  grid-row: 2;
+  text-align: center;
+}
+
+#inputDate {
+  grid-column: 5/9;
+  grid-row: 1;
+  color: white;
+}
+
+#inputDate p {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+#inputDate form {
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+input[type="date"] {
+  box-sizing: border-box;
+  border: 5px solid white;
+  background: transparent;
+  color: white;
+  font-size: 1.5rem;
+  padding: 8px;
+
+}
+
+
+/* #datePicker select {
+  background: rgb(51, 51, 51);
+  color: white;
+  padding: 5px;
+  border: 3px solid white;
+} */
+
+#videosBlock {
+  grid-column: 1/13;
+  grid-row: 2;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  margin: 0 auto;
+}
+
+#videosBlock button {
+  grid-row: 1;
+  grid-column: 1/13;
+  margin: 0 auto;
+  margin-bottom: 3%;
+  background: rgb(51, 51, 51);
+  color: white;
+  border: 3px solid white;
+  padding: 1.5%;
+  border-radius: 50px;
+}
+
+#videosBlock button:hover {
+  cursor: pointer;
+  background: white;
+  color: rgb(51, 51, 51);
+  border: 3px solid rgb(51, 51, 51);
+}
+
+#singleVideo {
+  grid-column: 3/11;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  margin-bottom: 1%;
+}
+
+#videoImg {
+  grid-column: 1/8;
+  grid-row: 1/5;
+  margin-right: 3%;
+}
+
+#videoImg img {
+  width: 100%;
+}
+
+#videoTitle {
+  grid-row: 1;
+  grid-column: 8/13;
+  margin-bottom: 3%;
+}
+
+#videoChannelTitle {
+  grid-row: 2;
+  grid-column: 8/10;
+}
+
+#videoViews {
+  grid-row: 2;
+  grid-column: 10/13;
+}
+
+#videoDescription {
+  grid-row: 3;
+  grid-column: 8/13;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+}
+
+footer {
+  grid-column: 1/13;
+  grid-row: 3;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+}
+
+@media(max-width: 768px) {
+  #singleVideo {
+    grid-column: 1/13;
+  }
+
+  #inputDate {
+    grid-column: 1/13;
+  }
+}
+
+@media(max-width: 625px) {
+  #singleVideo {
+    grid-column: 1/13;
+    padding: 0 1%;
+    margin-bottom: 3%;
+  }
+  #videoImg {
+    grid-column: 1/13;
+    grid-row: 1;
+  }
+  #videoTitle {
+    grid-row: 2;
+    grid-column: 1/13;
+  }
+  #videoChannelTitle {
+    grid-row: 3;
+    grid-column: 1/7;
+  }
+  #videoViews {
+    grid-row: 3;
+    grid-column: 7/13;
+  }
+  #videoDescription {
+    grid-row: 4;
+    grid-column: 1/13;
+  }
+  #countriesList select {
+    margin-top: 3%;
+    max-width: 100%;
+  }
+  #videosBlock button {
+    margin-top: 3%;
+  }
+  #countriesList {
+    margin-top: 3%;
+  }
+}
