@@ -19,7 +19,8 @@ export default class SelectCountry extends Component {
 
     render() {
 
-        let today = this.state.value;        
+        let d = moment.tz("America/New_York");
+        let today = d.format('YYYY-MM-DD');
 
         return (
             <main>
